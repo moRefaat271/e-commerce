@@ -1,0 +1,47 @@
+/*Smart Phones & Tablets*/
+@media(max-width: 767px) {
+    .navbar {
+        width: 100%;
+    }
+    .player {
+        margin-left: 0;
+        width: 100%;
+    }
+    .myslider .slider-table {
+        width: 100%;
+    }
+    .swipper-slide {
+        width: 100%;
+    }
+    .myslider .reclane {
+        margin-top: 12px;
+        margin-left: 10.333%;
+        width: 84%;
+    }
+.myslider .myreclane {
+    margin-left: 0px;
+    width: 100%;
+    margin-top: 10px;
+}
+    .footer-banner {
+        width: 100%;
+    }
+    .copyright {
+        font-size: 7px;
+    }
+}
+/*Small Screen*/
+@media(min-width: 768px) and (max-width: 991px) {
+  
+    
+}
+/*Medium Screen*/
+@media(min-width: 992px) and (max-width: 1199px) {
+    
+
+}
+/*Large Screen*/
+@media(min-width: 1200px) {
+    
+
+}
