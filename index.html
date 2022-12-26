@@ -12,76 +12,136 @@
         <!--[normalize file exists in bootstrap file]
         <link rel="stylesheet" href="../css/normalize.css">
 -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
         <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/media.css">
         <!--[if it's IE]-->
     </head>
     <style>
-
+        
+        /* start navbar */
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        .navbar{
+            background-color: #EEE;
+            width: 100%;
+            height: 80px;
+        }
+        label.logo{
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+        }
+        .navbar ul{
+            float: right;
+            margin-right: 20px;
+        }
+        .navbar ul li
+        {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+        .navbar ul li a{
+            color: #67AD5C;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+        .navbar a.active, 
+        .navbar a:hover{
+            background-color: #67AD5C;
+            color: white;
+            transition: .5s;
+        }
+        .checkbtn{
+            font-size: 30px;
+            color: #67AD5C;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+        #check{
+            display: none;
+        }
+        .header{
+            background:url(imgs/4.jpeg) no-repeat;
+            background-size: cover;
+            height: calc(100vh - 80px);
+        }
+        @media (max-width: 925px) {
+            label.logo{
+                font-size: 30px;
+                padding-left: 50px;
+            }
+            .navbar ul li a{
+                font-size: 16px;
+            }
+        }
+        @media (max-width: 858px) {
+            .checkbtn{
+                display: block;
+            }
+            ul{
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background-color: #1f3f1a;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+            .navbar ul li{
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+            .navbar ul li a{
+                font-size: 20px;
+            }
+            a:hover,a.active{
+                background: none;
+                color: #67AD5C;
+            }
+            #check:checked ~ ul {
+                left: 0;
+            }
+        }
+        /* end navbar */
     </style>
     <body>
 <!--start navbar-->
-        <section class="myNav">
-        <nav class="navbar navbar-inverse" role="navigation">
-            <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      
-                    <ul class="nav navbar-nav navbar-left">
-                        <li class="active pop"><a href="#">Home</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Reclame</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <a class="btn btn-primary"><i class="fa fa-facebook fa-2x"></i></a>
-                        <a class="btn btn-success"><i class="fa fa-whatsapp fa-2x"></i></a>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
-        </section>
+    <nav class="navbar">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <label class="logo">myLogo</label>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="category.html">Categories</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>   
+    <div class="header"></div> 
 <!--end navbar-->
 
-<canvas id="my-canvas" width="300" height="150">
-    
-</canvas>
-        <!--Start Footer-->
-       
-        <!--End Footer-->
-        <script src="js/jquery-3.5.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <!-- Swiper JS -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src="js/main.js"></script>
+<!--Start Footer-->
 
-        <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper('.swiper-container', {
-                navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-                loop: true,
-                autoplay: {
-                    delay: 2500,
-                    disableOnInteraction: false,
-                },
-            });
-        </script>
+<!--End Footer-->
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
