@@ -1,0 +1,178 @@
+/* #67AD5C */
+
+.t_container {
+  width: 80%;
+  margin: 25px auto 0;
+}
+
+/*Upper Page*/
+
+.t_upperPage {
+  display: flex;
+}
+.t_sideImg {
+  margin-right: 15px;
+}
+.t_sideImg img {
+  border: solid 2px #67ad5c;
+  border-radius: 15px;
+}
+.t_mainImg {
+  position: relative;
+}
+.t_mainImg img {
+  border: solid 2px #67ad5c;
+  border-radius: 15px;
+}
+
+#t_rArrow {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  font-size: 25px;
+  color: #67ad5c;
+  cursor: pointer;
+}
+#t_lArrow {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  font-size: 25px;
+  color: #67ad5c;
+  cursor: pointer;
+}
+
+.t_prodDetails {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.t_btnPlus {
+  display: flex;
+  width: 400px;
+}
+.t_leftSide {
+  width: 100px;
+  height: 20px;
+  padding: 5px;
+  border: solid 1px rgb(206, 201, 201);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.t_leftSide button {
+  background-color: white;
+  border: solid 1px rgba(255, 255, 255, 0.986);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.t_rightSide button {
+  margin-left: 20px;
+  height: 30px;
+  width: 180px;
+  border: solid 1px #67ad5c;
+  background-color: #67ad5c;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.t_starsColor {
+  color: orange;
+}
+.t_moneyColor {
+  color: #67ad5c;
+}
+.t_stockColor {
+  color: blue;
+}
+#t_prodDesc {
+  font-size: 18px;
+}
+
+/*Lower Page*/
+.t_lowerPage {
+  margin-top: 50px;
+  height: 500px;
+  border-top: 2px solid #67ad5c;
+  border-bottom: 2px solid #67ad5c;
+  display: flex;
+  justify-content: space-evenly;
+}
+.t_detailsButtons {
+  margin: 20px;
+  padding: 20px;
+  width: 400px;
+  background-color: white;
+  /* border: solid 1px #67ad5c; */
+  border: solid 1px grey;
+  font-size: 23px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.t_detailsButtonsReplace {
+  margin: 20px;
+  padding: 20px;
+  width: 400px;
+  background-color: white;
+  border: solid 1px #67ad5c;
+  font-size: 23px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #67ad5c;
+}
+.t_buttonHolder {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: center;
+}
+.t_DescButtonDiv {
+  display: flex;
+  flex-direction: column;
+}
+.t_DescButtonDiv p {
+  font-size: 22px;
+  padding: 0 25px;
+}
+.t_DescButtonDiv h3 {
+  color: #67ad5c;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+.t_DescButtonDiv ul {
+  margin: 0;
+}
+.t_DescButtonDiv ul li {
+  color: #67ad5c;
+  margin: 10px;
+}
+.t_DescButtonDiv ul li span {
+  color: blue;
+  font-size: 19px;
+}
+.t_lowerPage {
+  display: flex;
+}
+.t_charButtonDiv {
+  width: 500px;
+  padding: 15px;
+}
+.t_line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px grey;
+  margin: 50px 0;
+}
+
+.t_rightSideHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
