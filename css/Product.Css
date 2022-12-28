@@ -1,0 +1,74 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* style for container for all in products page */
+
+.ProductSection_MH {
+    padding-top: 30px;
+}
+
+
+/* Style for products Word */
+
+.proword {
+    /* position: absolute; */
+    margin-left: 120px;
+    padding-top: 0px;
+}
+
+
+/* style for container for products */
+
+.procontainer {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    margin: auto;
+    width: 85%;
+}
+
+
+/* style for each product  div */
+
+.prochoice {
+    margin: auto;
+    /* padding: 60px 20px;
+    padding-bottom: 0px; */
+    /* border: 1px black soli; */
+    padding-top: 10px;
+}
+
+
+/* style for each product image  div */
+
+.prochoice .proimage {
+    width: 200px;
+    height: 300px;
+    border-color: white;
+    box-shadow: 5px black;
+    border-radius: 20px;
+    /* border: 5px black soli; */
+    box-shadow: 10px 10px 35px gray;
+}
+
+
+/* style for product name */
+
+.prodetails .proname {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--e-global-typography-el_title_3-font-size);
+    line-height: var(--e-global-typography-el_title_3-line-height);
+}
+
+
+/* style for product rate */
+
+.checked {
+    color: orange;
+}
+
+.prorating {
+    padding-top: 10px;
+}

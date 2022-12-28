@@ -1,0 +1,64 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* style for container for all in category page */
+
+.CategorySection_MH {
+    padding-top: 30px;
+}
+
+
+/* Style for Category Word */
+
+.catword {
+    /* position: absolute; */
+    margin-left: 125px;
+    padding-top: 20px;
+    font-size: var(--e-global-typography-el_title_3-font-size);
+    line-height: var(--e-global-typography-el_title_3-line-height);
+}
+
+
+/* style for container for categories */
+
+.Catcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 85%;
+}
+
+
+/* style for each category  div */
+
+.catchoice {
+    margin: auto;
+    /* padding: 10px 5px; */
+    /* padding: auto; */
+    /* box-shadow: 20px 20px 5px grey; */
+    padding-top: 10px;
+}
+
+
+/* style for each category image  div */
+
+.catchoice .catimage {
+    width: 250px;
+    height: 320px;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 35px gray;
+    ;
+}
+
+
+/* style for category name */
+
+.catname {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--e-global-typography-el_title_3-font-size);
+    line-height: var(--e-global-typography-el_title_3-line-height);
+    text-align: center;
+}
