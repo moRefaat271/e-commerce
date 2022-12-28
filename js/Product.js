@@ -18,7 +18,7 @@ $.ajax({
                 <img class="proimage" src="${products[i].thumbnail}" alt="Product Image">
                 <div class="prodetails">
                     <h3 class="proname"> ${products[i].title}</h3>
-                    <div class="proprice"> <span>&euro;${products[i].price}</span> </div>
+                    <div class="proprice"> <span>$${products[i].price}</span> </div>
                     <div class="prorating" id="prorate${i}">         
                      </div>
                     </div>
