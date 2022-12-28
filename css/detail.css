@@ -14,15 +14,17 @@
   margin-right: 15px;
 }
 .t_sideImg img {
-  border: solid 2px #67ad5c;
+  border: solid 2px black;
   border-radius: 15px;
+  box-shadow: 1px 1px 30px grey;
 }
 .t_mainImg {
   position: relative;
 }
 .t_mainImg img {
-  border: solid 2px #67ad5c;
+  border: solid 2px black;
   border-radius: 15px;
+  box-shadow: 1px 1px 30px grey;
 }
 
 #t_rArrow {

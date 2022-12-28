@@ -1,8 +1,9 @@
 /// starting with the ajax call for the api
+var id = location.search.split("=")[1];
 var mainImgCounter = 0;
 $.ajax({
   method: "GET",
-  url: "https://dummyjson.com/products/90",
+  url: "https://dummyjson.com/products/" + id,
   data: {},
   success: function (data) {
     // getting side images for the api and appending it to the html
