@@ -6,7 +6,7 @@
 /* style for container for all in products page */
 
 .ProductSection_MH {
-    padding-top: 30px;
+    padding-top: 15px;
 }
 
 
@@ -38,6 +38,8 @@
     padding-bottom: 0px; */
     /* border: 1px black soli; */
     padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 200px;
 }
 
 
@@ -60,6 +62,12 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: var(--e-global-typography-el_title_3-font-size);
     line-height: var(--e-global-typography-el_title_3-line-height);
+     padding-top: 10px;
+}
+
+.prodetails .proprice {
+   
+    padding-top: 10px;
 }
 
 
