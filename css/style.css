@@ -1,0 +1,59 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+} 
+.A_contain{
+  position: relative;
+  width: 1200px;
+  background-color: white;
+  height: 450px;
+  margin: auto;
+  overflow: hidden;
+}
+.A_card {
+  position: absolute;
+    width: 256px;
+    height: 430px;
+    color: #212121;
+    font-family: 'Noto Sans';
+    font-size: 15px;
+    top:20px;
+  }
+  
+  
+  
+  .A_price {
+   font-weight: lighter;
+    font-size: 16px;
+  }
+
+  /* Next & previous buttons */
+.A_prev,
+.A_next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 10px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: 100;
+  background-color: aliceblue;
+  height: 50px;
+}
+
+/* Position the "next button" to the right */
+.A_next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+ 
