@@ -18,6 +18,8 @@
     <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <script src="https://kit.fontawesome.com/6da26f4632.js" crossorigin="anonymous"></script>
     <!--[if it's IE]-->
 </head>
 <style>
@@ -35,6 +37,7 @@
         background-color: #EEE;
         width: 100%;
         height: 80px;
+        margin: 0;
     }
 
     label.logo {
@@ -286,20 +289,96 @@
         </ul>
     </nav>
     <div class="header">
+        <div class="t_container">
+            <div class="t_upperPage">
 
+                <!-- class for side img to be implemented using images from the api-->
+                <div class="t_sideImg">
+                    <!-- <div class="t_imageRep">
+                        <img src="" width="110px" height="130px" alt="">
+                    </div>
+                    <div class="t_imageRep">
+                        <img src="" width="110px" height="130px" alt="">
+                    </div>
+                    <div class="t_imageRep">
+                        <img src="" width="110px" height="130px" alt="">
+                    </div> -->
+                </div>
+                <div class="t_mainImg">
+                    <img src="" width="500px" height="700px" alt="">
+
+                    <i id="t_rArrow" class="fa-solid fa-arrow-right"></i>
+                    <i id="t_lArrow" class="fa-sharp fa-solid fa-arrow-left"></i>
+                </div>
+
+                <div class="t_prodDetails">
+
+                    <h1>Title: <span id="t_prodTitle"></span></h1>
+                    <h2>Brand: <span id="t_prodBrand">&stars;</span></h2>
+                    <h3>Rating : <span class="t_starsColor"></span></h3>
+                    <h3>Price: <span class="t_moneyColor"></span></h3>
+                    <p><b>Description:</b> <span id="t_prodDesc"></span></p>
+                    <h3>In Stock: <span class="t_stockColor"></span></h3>
+                    <div class="t_btnPlus">
+                        <div class="t_leftSide">
+                            <button id="t_btnMin">&minus;</button>
+                            <span id="t_cartNo">1</span>
+                            <button id="t_btnMax">&plus;</button>
+                        </div>
+                        <div class="t_rightSide">
+                            <button>Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="t_lowerPage">
+                <div class="t_buttonHolder">
+                    <button value="Desc" class="t_detailsButtons"><i
+                            class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                        Description</button>
+                    <button value="char" class="t_detailsButtons"><i class="fa-solid fa-list"></i>
+                        Characteristic</button>
+
+                </div>
+                <div class="t_rightSideHolder">
+                    <div class="t_DescButtonDiv">
+
+                        <p id="t_descDetails"></p>
+
+                        <h3>Items details:</h3>
+                        <ul>
+                            <li>Title: <span id="t_lastTitle"></span></li>
+                            <li>Price: <span id="t_lastPrice"></span></li>
+                            <li>Discount: <span id="t_lastDisc"></span> %</li>
+
+                        </ul>
+                    </div>
+                    <div class="t_charButtonDiv" style="display: none;">
+                        <div class="t_line">
+                            <h3>Weight</h3>
+                            <p>3.8Kg</p>
+                        </div>
+                        <div class="t_line">
+                            <h3>Dimensions</h3>
+                            <p>155 × 155 × 155 cm</p>
+                        </div>
+                        <div class="t_line">
+                            <h3>Color</h3>
+                            <p>Black</p>
+                        </div>
+                        <div class="t_line">
+                            <h3>Style</h3>
+                            <p>Modern, Loft</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
 
     </div>
     <!--end navbar-->
-
-<!-- start image slider -->
-<div style="position: relative;">
-    <div id="asCont" class="A_contain">
-        <a id="Aprev" class="A_prev">❮</a>
-        <a id="Anext" class="A_next">❯</a>
-    </div>
-</div>
-<!-- end image slider -->
 
     <!--Start Footer-->
 
@@ -353,6 +432,7 @@
     <!--End Footer-->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/details.js"></script>
 </body>
 
 </html>
