@@ -326,5 +326,20 @@
             padding: 15px;
         }
     }
-
+    .footer h2 {
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .box a {
+        color: #67AD5C;
+        font-size: 15px;
+    }
+    .copyright {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 10px;
+        margin-bottom: -33px;
+    }
     /* end footer */
