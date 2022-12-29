@@ -67,7 +67,7 @@ $("#Aprev").on("click", function () {
     $(".A_card").eq(i).animate(
       { left: "-=250px" },
       {
-        duration: 200,
+        duration: 600,
       }
     );
   }
