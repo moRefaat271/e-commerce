@@ -5,15 +5,22 @@
   list-style: none;
   box-sizing: border-box;
 } 
-.A_contain{
+.A_Bestcontain,.A_Catcontain{
   position: relative;
   width: 1200px;
   background-color: white;
-  height: 450px;
-  margin: auto;
   overflow: hidden;
 }
-.A_card {
+#ABestContain{
+  height: 450px;
+  margin: auto;
+
+}
+#ACatContain{
+  height: 300px;
+margin-left: 160px;
+}
+.A_Bestcard,.A_Catcard {
   position: absolute;
     width: 256px;
     height: 430px;
@@ -23,8 +30,11 @@
     top:20px;
   }
   
-  
-  
+  hr{
+    height: 1px;
+        background-color: #ccc;
+        border: none;
+  }
   .A_price {
    font-weight: lighter;
     font-size: 16px;

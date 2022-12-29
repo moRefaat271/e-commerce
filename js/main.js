@@ -1,46 +1,155 @@
-//------------------------------------------------------------------------------------------//
-var AsmImg = [
-  "imgs/phone2.png",
+//!categories slider section start
+var AsmCatImg = [
+  "imgs/sun.jpg",
   "imgs/scin.jpg",
-  "imgs/3.webp",
   "imgs/4.jpg",
-  "imgs/5.jpg",
-  "imgs/6.webp",
+  "imgs/Groceries.jpg",
+  "imgs/perfumes.jpg",
+  "imgs/cars.webp",
 ];
 var categories = [
-  "Smart Phones",
+  "Sunglasses",
   "Scin Care",
-  "images/3.webp",
-  "images/4.jpg",
-  "images/5.jpg",
-  "images/6.webp",
+  "Furnature",
+  "groceries",
+  "fragrences",
+  "automotive",
 ];
 
-//*create images cards
+//*create categories images cards
 var lef = 0;
-for (let i = 0; i < AsmImg.length; i++) {
+for (let i = 0; i < AsmCatImg.length; i++) {
   document.getElementById(
-    "asCont"
-  ).innerHTML += `<div class="A_card" style="left:${lef}px;">
-        <img class="A_imgs"  src="${AsmImg[i]}" style="width:200px;height:70%;border-radius:15px">
+    "ACatContain"
+  ).innerHTML += `<div class="A_Catcard" style="left:${lef}px;height:270px">
+        <img  src="${AsmCatImg[i]}" style="width:140px;height:140px;">
         <div >
-            <h4 class="A_desc">${categories[i]}</h4>
-            <p class="A_price">$19.99</p> 
+            <h4 style="position:absolute;left:9%;top:59%;font-size:20px" class="A_Catname">${categories[i]}</h4>
+            <p style="position:absolute;bottom:23%;left:14%;color:grey" class="A_Catprice">15 Item</p> 
         </div>
      </div>`;
   lef += 250;
 }
 
-//-------------------------------------------------------------------------------------------//
+//^ category Next arrow (>) action
+document.getElementById("ACatnext").onclick = function () {
+  for (var i = 0; i < $(".A_Catcard").length; i++) {
+    if (parseInt($(".A_Catcard").eq(i).css("left")) > 1200) {
+      $(".A_Catcard").eq(i).css("left", "-250px");
+    }
+    $(".A_Catcard").eq(i).animate(
+      {
+        left: "+=250px",
+      },
+      600
+    );
+  }
+};
+//^categories Next arrow color change
+document.getElementById("ACatnext").onmouseover = function () {
+  $("#ACatnext").css("color", "green");
+};
+document.getElementById("ACatnext").onmouseout = function () {
+  $("#ACatnext").css("color", "black");
+};
+
+//~ categories Previos Arrow(<) action
+$("#ACatprev").on("click", function () {
+  for (var i = 0; i < $(".A_Catcard").length; i++) {
+    if (parseInt($(".A_Catcard").eq(i).css("left")) < 0) {
+      $(".A_Catcard").eq(i).css("left", "1250px");
+    }
+    $(".A_Catcard").eq(i).animate(
+      { left: "-=250px" },
+      {
+        duration: 600,
+      }
+    );
+  }
+});
+//~ categories Previos Arrow(<) color change
+document.getElementById("ACatprev").onmouseover = function () {
+  $("#ACatprev").css("color", "green");
+};
+document.getElementById("ACatprev").onmouseout = function () {
+  $("#ACatprev").css("color", "black");
+};
+
+//&on card mouseover
+for (i = 0; i < document.getElementsByClassName("A_Catcard").length; i++) {
+  (function (i) {
+    document.getElementsByClassName("A_Catcard")[i].onmouseover = function () {
+      $(".A_Catname")
+        .eq(i)
+        .css("color","green")
+    };
+  })(i);
+}
+
+//&on card mouseout
+for (i = 0; i < document.getElementsByClassName("A_Catcard").length; i++) {
+  (function (i) {
+    document.getElementsByClassName("A_Catcard")[i].onmouseout = function () {
+      $(".A_Catname")
+        .eq(i)
+        .css("color","black")
+    };
+  })(i);
+}
+//!categories slider section End
+
+//------------------------------------------------------------------------------------------//
+//------------------------------------------------------------------------------------------//
+//------------------------------------------------------------------------------------------//
+
+//!BestSellers slider section start
+var AsmBestImg = [
+  "imgs/bestsun.jpg",
+  "imgs/hydro.jpg",
+  "imgs/chair1.webp",
+  "imgs/Fruit.webp",
+  "imgs/fog.jpg",
+  "imgs/glw.webp"
+];
+var ProdName = [
+  "Round Silver Frame Sun Glasses",
+  "Hyaluronic Acid Serum",
+  "Green Chair",
+  "cereals muesli fruit nuts",
+  "Fog Scent Xpressio Perfume",
+  "Cycle Bike Glow",
+];
+var ProdPrice = [
+  "$19.99",
+  "$20.00",
+  "$50.00",
+  "$6.00",
+  "$13.00",
+  "$35.00",
+];
+//*create bestsellers images cards
+var lef = 0;
+for (let i = 0; i < AsmBestImg.length; i++) {
+  document.getElementById(
+    "ABestContain"
+  ).innerHTML += `<div class="A_Bestcard" style="left:${lef}px;">
+        <img class="A_imgs"  src="${AsmBestImg[i]}" style="width:200px;height:70%;border-radius:15px">
+        <div >
+            <h4 class="A_desc">${ProdName[i]}</h4>
+            <p class="A_price">${ProdPrice[i]}</p> 
+        </div>
+     </div>`;
+  lef += 250;
+}
 
 //^Next arrow (>) action
-document.getElementById("Anext").onclick = function () {
-  for (var i = 0; i < $(".A_card").length; i++) {
-    if (parseInt($(".A_card").eq(i).css("left")) > 1200) {
-      $(".A_card").eq(i).css("left", "-250px");
+document.getElementById("ABestnext").onclick = function () {
+  for (var i = 0; i < $(".A_Bestcard").length; i++) {
+    if (parseInt($(".A_Bestcard").eq(i).css("left")) > 1200) {
+      $(".A_Bestcard").eq(i).css("left", "-250px");
     }
     // $(".A_card").eq(i).css("left", parseInt($(".A_card").eq(i).css("left")) + 250)
-    $(".A_card").eq(i).animate(
+    $(".A_Bestcard").eq(i).animate(
       {
         left: "+=250px",
       },
@@ -49,25 +158,24 @@ document.getElementById("Anext").onclick = function () {
   }
 };
 //^Next arrow color change
-document.getElementById("Anext").onmouseover = function () {
-  $("#Anext").css("color", "green");
+document.getElementById("ABestnext").onmouseover = function () {
+  $("#ABestnext").css("color", "green");
 };
-document.getElementById("Anext").onmouseout = function () {
-  $("#Anext").css("color", "black");
+document.getElementById("ABestnext").onmouseout = function () {
+  $("#ABestnext").css("color", "black");
 };
-//-------------------------------------------------------------------------------------------//
 
 //~Previos Arrow(<) action
-$("#Aprev").on("click", function () {
-  for (var i = 0; i < $(".A_card").length; i++) {
-    if (parseInt($(".A_card").eq(i).css("left")) < 0) {
-      $(".A_card").eq(i).css("left", "1250px");
+$("#ABestprev").on("click", function () {
+  for (var i = 0; i < $(".A_Bestcard").length; i++) {
+    if (parseInt($(".A_Bestcard").eq(i).css("left")) < 0) {
+      $(".A_Bestcard").eq(i).css("left", "1250px");
     }
     // $(".A_card").eq(i).css("left", parseInt($(".A_card").eq(i).css("left")) - 250);
-    $(".A_card").eq(i).animate(
+    $(".A_Bestcard").eq(i).animate(
       { left: "-=250px" },
       {
-        duration: 200,
+        duration: 600,
       }
     );
   }
@@ -76,22 +184,21 @@ $("#Aprev").on("click", function () {
 //   console.log("sliderTest");
 // };
 //~Previos Arrow(<) color change
-document.getElementById("Aprev").onmouseover = function () {
-  $("#Aprev").css("color", "green");
+document.getElementById("ABestprev").onmouseover = function () {
+  $("#ABestprev").css("color", "green");
 };
-document.getElementById("Aprev").onmouseout = function () {
-  $("#Aprev").css("color", "black");
+document.getElementById("ABestprev").onmouseout = function () {
+  $("#ABestprev").css("color", "black");
 };
-//-------------------------------------------------------------------------------------------//
 
 //&images change
 var newImg = [
-  "imgs/phone.jpg",
-  "imgs/1.webp",
-  "imgs/2.webp",
-  "imgs/5.jpg",
-  "imgs/4.jpg",
-  "imgs/2.webp",
+  "imgs/bestsun2.webp",
+  "imgs/hydro1.jpg",
+  "imgs/chair.webp",
+  "imgs/Fruit1.jpg",
+  "imgs/fog1.jpg",
+  "imgs/glow1.jpg",
 ];
 
 //!images on mouse over
@@ -111,8 +218,7 @@ for (i = 0; i < document.getElementsByClassName("A_imgs").length; i++) {
 for (i = 0; i < document.getElementsByClassName("A_imgs").length; i++) {
   (function (i) {
     document.getElementsByClassName("A_imgs")[i].onmouseout = function () {
-      // this.src = AsmImg[i];
-      $(".A_imgs").eq(i).attr("src", AsmImg[i]).fadeTo("slow", 1);
+      $(".A_imgs").eq(i).attr("src", AsmBestImg[i]).fadeTo("slow", 1);
     };
   })(i);
 }
