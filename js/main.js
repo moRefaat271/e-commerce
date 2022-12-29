@@ -79,9 +79,7 @@ document.getElementById("ACatprev").onmouseout = function () {
 for (i = 0; i < document.getElementsByClassName("A_Catcard").length; i++) {
   (function (i) {
     document.getElementsByClassName("A_Catcard")[i].onmouseover = function () {
-      $(".A_Catname")
-        .eq(i)
-        .css("color","green")
+      $(".A_Catname").eq(i).css("color", "green");
     };
   })(i);
 }
@@ -90,9 +88,7 @@ for (i = 0; i < document.getElementsByClassName("A_Catcard").length; i++) {
 for (i = 0; i < document.getElementsByClassName("A_Catcard").length; i++) {
   (function (i) {
     document.getElementsByClassName("A_Catcard")[i].onmouseout = function () {
-      $(".A_Catname")
-        .eq(i)
-        .css("color","black")
+      $(".A_Catname").eq(i).css("color", "black");
     };
   })(i);
 }
@@ -109,7 +105,7 @@ var AsmBestImg = [
   "imgs/chair1.webp",
   "imgs/Fruit.webp",
   "imgs/fog.jpg",
-  "imgs/glw.webp"
+  "imgs/glw.webp",
 ];
 var ProdName = [
   "Round Silver Frame Sun Glasses",
@@ -119,24 +115,17 @@ var ProdName = [
   "Fog Scent Xpressio Perfume",
   "Cycle Bike Glow",
 ];
-var ProdPrice = [
-  "$19.99",
-  "$20.00",
-  "$50.00",
-  "$6.00",
-  "$13.00",
-  "$35.00",
-];
+var ProdPrice = ["$19.99", "$20.00", "$50.00", "$6.00", "$13.00", "$35.00"];
 //*create bestsellers images cards
 var lef = 0;
 for (let i = 0; i < AsmBestImg.length; i++) {
   document.getElementById(
     "ABestContain"
   ).innerHTML += `<div class="A_Bestcard" style="left:${lef}px;">
-        <img class="A_imgs"  src="${AsmBestImg[i]}" style="width:200px;height:70%;border-radius:15px">
+        <img class="A_imgs"  src="${AsmBestImg[i]}" style="width:200px;height:70%;border-radius:15px;box-shadow: 5px 10px 18px #888888;">
         <div >
-            <h4 class="A_desc">${ProdName[i]}</h4>
-            <p class="A_price">${ProdPrice[i]}</p> 
+            <h4 class="A_desc" style="position:absolute;top:75%">${ProdName[i]}</h4>
+            <p class="A_price" style="position:absolute;top:80%">${ProdPrice[i]}</p> 
         </div>
      </div>`;
   lef += 250;

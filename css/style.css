@@ -4,41 +4,46 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-} 
-.A_Bestcontain,.A_Catcontain{
+}
+.A_Bestcontain,
+.A_Catcontain {
   position: relative;
   width: 1200px;
   background-color: white;
   overflow: hidden;
 }
-#ABestContain{
+#ABestContain {
   height: 450px;
   margin: auto;
-
 }
-#ACatContain{
+#ACatContain {
   height: 300px;
-margin-left: 160px;
+  /* margin-left: 160px; */
 }
-.A_Bestcard,.A_Catcard {
+.cat-card {
+  width: 65%;
+  margin: auto;
+}
+.A_Bestcard,
+.A_Catcard {
   position: absolute;
-    width: 256px;
-    height: 430px;
-    color: #212121;
-    font-family: 'Noto Sans';
-    font-size: 15px;
-    top:20px;
-  }
-  
-  hr{
-    height: 1px;
-        background-color: #ccc;
-        border: none;
-  }
-  .A_price {
-   font-weight: lighter;
-    font-size: 16px;
-  }
+  width: 256px;
+  height: 430px;
+  color: #212121;
+  font-family: "Noto Sans";
+  font-size: 15px;
+  top: 20px;
+}
+
+hr {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+.A_price {
+  font-weight: lighter;
+  font-size: 16px;
+}
 
 .A_price {
   font-weight: lighter;

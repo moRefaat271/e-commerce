@@ -132,6 +132,7 @@
   border-radius: 5px;
   cursor: pointer;
   color: #67ad5c;
+  list-style-type: none;
 }
 .t_buttonHolder {
   display: flex;
@@ -186,6 +187,9 @@
 
 /* Responsive part*/
 @media screen and (min-width: 769px) and (max-width: 1200px) {
+  * {
+    list-style: none;
+  }
   .t_upperPage {
     flex-direction: column;
   }
@@ -222,8 +226,14 @@
   .t_btnPlus {
     margin: 20px 0;
   }
+  #t_stockMarg {
+    margin: 20px 0;
+  }
 }
 @media screen and (max-width: 768px) {
+  * {
+    list-style-type: none;
+  }
   .t_upperPage {
     flex-direction: column;
   }
@@ -270,6 +280,9 @@
   .t_btnPlus {
     margin: 20px 0;
   }
+  #t_stockMarg {
+    margin: 20px 0;
+  }
 }
 
 .footer h2 {
@@ -278,7 +291,7 @@
   margin-bottom: 20px;
 }
 .box a {
-  color: #67AD5C;
+  color: #67ad5c;
   font-size: 15px;
 }
 .copyright {

@@ -1,336 +1,330 @@
-    /* start navbar */
-    /* header {
+/* start navbar */
+/* header {
         margin: 25px;
     } */
 
-    * {
-        text-decoration: none;
-        margin: 0;
-    }
+* {
+  text-decoration: none;
+  margin: 0;
+}
 
-    .navbar {
-        background-color: #EEE;
-        width: 100%;
-        height: 80px;
-    }
+.navbar {
+  background-color: #eee;
+  width: 100%;
+  height: 80px;
+}
 
-    label.logo {
-        font-size: 35px;
-        line-height: 80px;
-        padding: 0 100px;
-    }
+label.logo {
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+}
 
-    .navbar ul {
-        float: right;
-        margin-right: 20px;
-    }
+.navbar ul {
+  float: right;
+  margin-right: 20px;
+}
 
-    .navbar ul li {
-        display: inline-block;
-        line-height: 80px;
-        margin: 0 5px;
-    }
+.navbar ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
 
-    .navbar ul li a {
-        color: #67AD5C;
-        font-size: 17px;
-        padding: 7px 13px;
-        border-radius: 3px;
-        text-transform: uppercase;
-    }
+.navbar ul li a {
+  color: #67ad5c;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
 
-    .navbar a.active,
-    .navbar a:hover {
-        background-color: #67AD5C;
-        color: white;
-        transition: .5s;
-    }
+.navbar a.active,
+.navbar a:hover {
+  background-color: #67ad5c;
+  color: white;
+  transition: 0.5s;
+}
 
-    .checkbtn {
-        font-size: 30px;
-        color: #67AD5C;
-        float: right;
-        line-height: 80px;
-        margin-right: 40px;
-        cursor: pointer;
-        display: none;
-    }
+.checkbtn {
+  font-size: 30px;
+  color: #67ad5c;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
 
-    #check {
-        display: none;
-    }
+#check {
+  display: none;
+}
 
-    /* .header {
+/* .header {
         background: url(imgs/4.jpeg) no-repeat;
         background-size: cover;
         height: calc(100vh - 80px);
     } */
 
-    @media (max-width: 925px) {
-        label.logo {
-            font-size: 30px;
-            padding-left: 50px;
-        }
+@media (max-width: 925px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
 
-        .navbar ul li a {
-            font-size: 16px;
-        }
-    }
-
-    @media (max-width: 858px) {
-        .checkbtn {
-            display: block;
-        }
-
-        .menu {
-            position: fixed;
-            width: 100%;
-            height: 100vh;
-            background-color: #F4F4F4;
-            top: 80px;
-            left: -100%;
-            text-align: center;
-            transition: all .5s;
-        }
-
-        .navbar ul li {
-            display: block;
-            margin: 50px 0;
-            line-height: 30px;
-        }
-
-        .navbar ul li a {
-            font-size: 20px;
-        }
-
-        a:hover,
-        a.active {
-            background: none;
-            color: #67AD5C;
-        }
-
-        #check:checked~ul {
-            left: 0;
-        }
-    }
-
-    /* end navbar */
-    /* start footer */
-    footer {
-        display: -webkit-flex;
-        ;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        flex-flow: row wrap;
-        padding: 50px;
-        color: #67AD5C;
-        background-color: #F4F4F4;
-    }
-
-    .footer>* {
-        flex: 100%;
-    }
-
-    .footer-left {
-        margin-right: 1.25em;
-        margin-bottom: 2em;
-    }
-
-    .footer-left img {
-        width: 20%;
-    }
-
-    .footer h2 {
-        font-weight: 600;
-        font-size: 31px;
-        margin-bottom: 20px;
-    }
-
-    .footer ul {
-        list-style: none;
-        padding-left: 0;
-    }
-
-    .footer li {
-        line-height: 2em;
-    }
-
-    .footer a {
-        text-align: none;
-    }
-
-    .footer-right {
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        flex-flow: row wrap;
-    }
-
-    .footer-right>* {
-        flex: 1 50%;
-        margin-right: 1.25em;
-    }
-
-    .box a {
-        color: #67AD5C;
-        font-size: 20px;
-    }
-
-    .footer-bottom {
-        text-align: center;
-        color: #67AD5C;
-        padding-top: 50px;
-    }
-
-    .footer-left p {
-        padding-right: 20%;
-        color: #67AD5C;
-        margin-bottom: 10px;
-    }
-
-    .socials a {
-        width: 40px;
-        height: 40px;
-        display: inline-block;
-        margin-right: 10px;
-        border-radius: 25px;
-    }
-
-    .socials a:hover {
-        background-color: #67AD5C;
-        transition: .5s;
-    }
-
-    .socials a i {
-        color: #67AD5C;
-        padding: 10px 12px;
-        font-size: 20px;
-    }
-
-    .socials a i:hover {
-        color: #EEE;
-        transition: .5s;
-    }
-
-    .copyright {
-        text-align: center;
-        font-size: 22px;
-        font-weight: 600;
-        margin-top: 10px;
-        margin-bottom: -30px;
-    }
-
-    @media screen and (min-width: 600px) {
-        .footer-right>* {
-            flex: 1;
-        }
-
-        .footer-left {
-            flex: 1 0px;
-        }
-
-        .footer-right {
-            flex: 2 0px;
-        }
-    }
-
-    @media (max-width: 600px) {
-        .footer {
-            padding: 15px;
-        }
-    }
-    .footer h2 {
-        font-weight: 600;
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-    .box a {
-        color: #67AD5C;
-        font-size: 15px;
-    }
-    .copyright {
-        text-align: center;
-        font-size: 20px;
-        font-weight: 600;
-        margin-top: 10px;
-        margin-bottom: -33px;
-    }
-    /* end footer */
-
-* {
-    font-family: Arial, Helvetica, sans-serif;
+  .navbar ul li a {
+    font-size: 16px;
+  }
 }
 
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f4f4;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  .navbar ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  .navbar ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #67ad5c;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+/* end navbar */
+/* start footer */
+footer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+  color: #67ad5c;
+  background-color: #f4f4f4;
+}
+
+.footer > * {
+  flex: 100%;
+}
+
+.footer-left {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer-left img {
+  width: 20%;
+}
+
+.footer h2 {
+  font-weight: 600;
+  font-size: 31px;
+  margin-bottom: 20px;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-align: none;
+}
+
+.footer-right {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer-right > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.box a {
+  color: #67ad5c;
+  font-size: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #67ad5c;
+  padding-top: 50px;
+}
+
+.footer-left p {
+  padding-right: 20%;
+  color: #67ad5c;
+  margin-bottom: 10px;
+}
+
+.socials a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 25px;
+}
+
+.socials a:hover {
+  background-color: #67ad5c;
+  transition: 0.5s;
+}
+
+.socials a i {
+  color: #67ad5c;
+  padding: 10px 12px;
+  font-size: 20px;
+}
+
+.socials a i:hover {
+  color: #eee;
+  transition: 0.5s;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 600px) {
+  .footer-right > * {
+    flex: 1;
+  }
+
+  .footer-left {
+    flex: 1 0px;
+  }
+
+  .footer-right {
+    flex: 2 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 15px;
+  }
+}
+.footer h2 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.box a {
+  color: #67ad5c;
+  font-size: 15px;
+}
+.copyright {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: -33px;
+}
+/* end footer */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 /* style for container for all in category page */
 
 .CategorySection_MH {
-    padding-top: 10px;
+  padding-top: 10px;
 }
-
 
 /* Style for Category Word */
 
 .catword {
-    /* position: absolute; */
-    margin-left: 125px;
-    padding-top: 20px;
-    font-size: var(--e-global-typography-el_title_3-font-size);
-    line-height: var(--e-global-typography-el_title_3-line-height);
+  /* position: absolute; */
+  margin-left: 260px;
+  padding-top: 20px;
+  font-size: var(--e-global-typography-el_title_3-font-size);
+  line-height: var(--e-global-typography-el_title_3-line-height);
 }
 
 .catword h1 {
-        padding-bottom: 10px;
-    }
-
+  padding-bottom: 10px;
+}
 
 /* style for container for categories */
 
 .Catcontainer {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 75%;
 }
-
 
 /* style for each category  div */
 
 .catchoice {
-    margin: auto;
-    /* padding: 10px 5px; */
-    /* padding: auto; */
-    /* box-shadow: 20px 20px 5px grey; */
-    padding-top: 10px;
-    padding-bottom: 10px;
+  margin: auto;
+  /* padding: 10px 5px; */
+  /* padding: auto; */
+  /* box-shadow: 20px 20px 5px grey; */
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-
 
 /* style for each category image  div */
 
 .catchoice .catimage {
-    width: 250px;
-    height: 320px;
-    border-color: white;
-    border-radius: 20px;
-    box-shadow: 10px 10px 35px gray;
-    ;
+  width: 250px;
+  height: 320px;
+  border-color: white;
+  border-radius: 20px;
+  box-shadow: 10px 10px 35px gray;
+  cursor: pointer;
 }
 
- .catchoice h3 {
-        padding-top: 10px;
-    }
-
+.catchoice h3 {
+  padding-top: 10px;
+  cursor: pointer;
+}
 
 /* style for category name */
 
 .catname {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: var(--e-global-typography-el_title_3-font-size);
-    line-height: var(--e-global-typography-el_title_3-line-height);
-    text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--e-global-typography-el_title_3-font-size);
+  line-height: var(--e-global-typography-el_title_3-line-height);
+  text-align: center;
 }

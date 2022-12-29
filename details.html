@@ -23,6 +23,10 @@
     <!--[if it's IE]-->
 </head>
 <style>
+    * {
+        list-style: none;
+    }
+
     .navbar {
         background-color: #EEE;
         width: 100%;
@@ -134,7 +138,6 @@
     /* start footer */
     footer {
         display: -webkit-flex;
-        ;
         display: -moz-flex;
         display: -ms-flex;
         display: -o-flex;
@@ -143,6 +146,7 @@
         padding: 50px;
         color: #67AD5C;
         background-color: #F4F4F4;
+
     }
 
     .footer>* {
@@ -165,7 +169,7 @@
     }
 
     .footer ul {
-        list-style: none;
+        list-style: none !important;
         padding-left: 0;
     }
 
@@ -272,10 +276,10 @@
         </label>
         <label class="logo">myLogo</label>
         <ul class="menu">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="category.html">Categories</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="index.html" class="list active">Home</a></li>
+            <li><a href="Category.html" class="list">Categories</a></li>
+            <li><a href="#about" class="list">About</a></li>
+            <li><a href="#" class="list">Contact Us</a></li>
         </ul>
     </nav>
     <div class="header">
@@ -299,7 +303,7 @@
                     <h3>Rating : <span class="t_starsColor"></span></h3>
                     <h3 id="t_cssPrice">Price: <span class="t_moneyColor"></span></h3>
                     <p><b>Description:</b> <span id="t_prodDesc"></span></p>
-                    <h3>In Stock: <span class="t_stockColor"></span></h3>
+                    <h3 id="t_stockMarg">In Stock: <span class="t_stockColor"></span></h3>
                     <div class="t_btnPlus">
                         <div class="t_leftSide">
                             <button id="t_btnMin">&minus;</button>
@@ -378,7 +382,7 @@
         <ul class="footer-right">
             <li>
                 <h2>About</h2>
-                <ul class="box">
+                <ul class="box" style="list-style-type: none;">
                     <li><a href="#">About Shop</a></li>
                     <li><a href="#">News</a></li>
                     <li><a href="#">Contact</a></li>
