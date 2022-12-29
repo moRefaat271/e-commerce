@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -40,7 +40,12 @@ margin-left: 160px;
     font-size: 16px;
   }
 
-  /* Next & previous buttons */
+.A_price {
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+/* Next & previous buttons */
 .A_prev,
 .A_next {
   cursor: pointer;
@@ -65,5 +70,3 @@ margin-left: 160px;
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
- 
