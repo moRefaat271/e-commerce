@@ -8,17 +8,20 @@
 .A_Bestcontain,
 .A_Catcontain {
   position: relative;
-  width: 1200px;
   background-color: white;
   overflow: hidden;
+  margin: auto;
+
 }
 #ABestContain {
   height: 450px;
-  margin: auto;
+  width: 81.2%;
+
 }
 #ACatContain {
   height: 300px;
-  /* margin-left: 160px; */
+
+
 }
 .cat-card {
   width: 65%;

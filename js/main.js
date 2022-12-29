@@ -22,10 +22,10 @@ for (let i = 0; i < AsmCatImg.length; i++) {
   document.getElementById(
     "ACatContain"
   ).innerHTML += `<div class="A_Catcard" style="left:${lef}px;height:270px">
-        <img  src="${AsmCatImg[i]}" style="width:140px;height:140px;">
+        <img  src="${AsmCatImg[i]}" style="width:140px;height:140px;position:absolute;left:13%;border-radius:50%;box-shadow: 5px 10px 18px #888888;">
         <div >
-            <h4 style="position:absolute;left:9%;top:59%;font-size:20px" class="A_Catname">${categories[i]}</h4>
-            <p style="position:absolute;bottom:23%;left:14%;color:grey" class="A_Catprice">15 Item</p> 
+            <h4 style="position:absolute;left:22%;top:59%;font-size:20px" class="A_Catname">${categories[i]}</h4>
+            <p style="position:absolute;bottom:23%;left:26%;color:grey" class="A_Catprice">15 Item</p> 
         </div>
      </div>`;
   lef += 250;
