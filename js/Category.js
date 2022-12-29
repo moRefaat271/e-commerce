@@ -32,7 +32,7 @@ $.ajax({
     for (var i = 0; i < data.length; i++) {
       $("#Catcontainer_MH").append(
         ' <div class="catchoice">' +
-          '<img class="catimage" id="catimg_MH" src="/imgs/Categoeyimg/' +
+          '<img class="catimage" id="catimg_MH" src="imgs/Categoeyimg/' +
           catimg[i] +
           '.jpg" alt="Category Image">' +
           '<div class="catname">' +
