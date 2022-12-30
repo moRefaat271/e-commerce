@@ -47,3 +47,49 @@ $.ajax({
     }
   },
 });
+
+$("#t_checkCart").on("click", function () {
+  $("#t_overLay").css("display", "block");
+  $("#t_cart_Page").animate({ right: "0px" }, 1000);
+  $("body").css("overflow", "hidden");
+  $("#t_cartItemContainer").html("");
+  //#region fillTheCart
+  var cartItems = allCookieList();
+  var mycartData = "";
+  for (var i in cartItems) {
+    mycartData = cartItems[i].split(",");
+    $("#t_cartItemContainer").append(`
+        <div class="t_cart_item">
+        <div class="t_cart_img">
+            <img src="${mycartData[3]}" width="100px" height="100px" alt="">
+            <div class="t_cart_details">
+                <h4>${mycartData[0]}</h4>
+                <p><span class="t_cart_itemCount">${
+                  mycartData[2]
+                }</span>* $<span class="t_cart_itemPrice">${
+      mycartData[1]
+    }</span> = <span
+                        class="t_cart_total">${
+                          mycartData[2] * mycartData[1]
+                        }</span></p>
+
+            </div>
+        </div>
+        <p class="t_cart_removeItem">X</p>
+        <span style="display:none">${i}</span>                
+    </div>
+        `);
+  }
+  $(".t_cart_removeItem").on("click", function () {
+    deleteCookie($(this).next("span").text());
+    $(this).parent().css("display", "none");
+  });
+  //#endregion
+});
+
+$("#t_x_button,#t_overLay").on("click", function () {
+  $("#t_cart_Page").animate({ right: "-400px" }, 1000, function () {
+    $("#t_overLay").css("display", "none");
+    $("body").css("overflow", "auto");
+  });
+});

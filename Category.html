@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cart.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -28,6 +29,7 @@
             <li><a href="Category.html" class="active">Categories</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact Us</a></li>
+            <li><a href="#" id="t_checkCart" class="list">Cart</a></li>
         </ul>
     </nav>
     <div class="header"></div>
@@ -109,7 +111,20 @@
     </footer>
 
     <!--End Footer-->
+
+    <div id="t_cart_Page">
+        <div id="t_cartHeader">
+            <h3>Your Cart</h3>
+            <p id="t_x_button">X</p>
+        </div>
+
+        <div id="t_cartItemContainer"></div>
+    </div>
+
+
+    <div id="t_overLay" style="display: none;"></div>
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/lib.js"></script>
     <script src="js/Category.js"></script>
 </body>
 
