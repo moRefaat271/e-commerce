@@ -62,19 +62,16 @@ $.ajax({
 
     //#region AddToCart
     $("#t_addToCart").on("click", function () {
+      var cookiName = "item" + data.id;
       var cookieData =
-        "item" +
-        data.id +
-        "=" +
         data.title +
         "," +
         data.price +
         "," +
         parseInt($("#t_cartNo").text()) +
         "," +
-        data.thumbnail +
-        ";";
-      setCookie(cookieData, "1/1/2030");
+        data.thumbnail;
+      setCookie(cookiName, cookieData, "1/1/2030");
     });
     //#endregion
 

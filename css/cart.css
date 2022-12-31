@@ -8,6 +8,7 @@
   right: -400px;
   top: 0;
   z-index: 3;
+  overflow: auto;
 }
 #t_x_button {
   cursor: pointer;
