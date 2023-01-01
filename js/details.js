@@ -72,6 +72,10 @@ $.ajax({
         "," +
         data.thumbnail;
       setCookie(cookiName, cookieData, "1/1/2030");
+      $("#addedToCart").css("display", "block");
+      setTimeout(function () {
+        $("#addedToCart").css("display", "none");
+      }, 2000);
     });
     //#endregion
 
