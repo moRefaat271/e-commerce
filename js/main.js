@@ -25,7 +25,7 @@ for (let i = 0; i < AsmCatImg.length; i++) {
         <img  src="${AsmCatImg[i]}" style="width:140px;height:140px;position:absolute;left:13%;border-radius:50%;box-shadow: 5px 10px 18px #888888;">
         <div >
             <h4 style="position:absolute;left:22%;top:59%;font-size:20px" class="A_Catname">${categories[i]}</h4>
-            <p style="position:absolute;bottom:23%;left:26%;color:grey" class="A_Catprice">15 Item</p> 
+            <p style="position:absolute;bottom:23%;left:26%;color:grey" class="A_Catprice">${i+5} Items</p> 
         </div>
      </div>`;
   lef += 250;
@@ -126,9 +126,13 @@ for (let i = 0; i < AsmBestImg.length; i++) {
         <div >
             <h4 class="A_desc" style="position:absolute;top:75%">${ProdName[i]}</h4>
             <p class="A_price" style="position:absolute;top:80%">${ProdPrice[i]}</p> 
+            <span class="t_starsColor fa fa-star checked" style="position:absolute;top:86%"></span>
         </div>
      </div>`;
   lef += 250;
+}
+for (var i = 0; i <4; i++) {
+  $(".t_starsColor").append(`<i class="fa-solid fa-star"></i>`);
 }
 
 //^Next arrow (>) action
