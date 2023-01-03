@@ -41,7 +41,7 @@ $.ajax({
         $(".prochoice")
           .eq(i)
           .click(function () {
-            window.open("details.html?id=" + products[i].id);
+            window.open("details.html?id=" + products[i].id, "_self");
           });
       })(i);
     }

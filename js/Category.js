@@ -48,7 +48,7 @@ $.ajax({
         $(".catchoice")
           .eq(i)
           .click(function () {
-            window.open("Product.html?cat=" + data[i]); /// to go new tap
+            window.open("Product.html?cat=" + data[i], "_self"); /// to go new tap
           });
       })(i);
     }

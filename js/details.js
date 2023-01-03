@@ -6,6 +6,7 @@ $.ajax({
   url: "https://dummyjson.com/products/" + id,
   data: {},
   success: function (data) {
+    console.log(data);
     // getting side images for the api and appending it to the html
     for (var i = 0; i < 3 && i < data.images.length; i++) {
       $(".t_sideImg").append(`<div class="t_imageRep">
@@ -27,6 +28,7 @@ $.ajax({
       mainImgCounter--;
     });
     //#endregion
+    //""
 
     //#region ProdDetails
     $("#t_prodTitle").text(data.title);
